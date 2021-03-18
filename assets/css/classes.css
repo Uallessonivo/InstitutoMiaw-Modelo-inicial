@@ -1,0 +1,47 @@
+.title-content {
+    font-family: 'Anton', sans-serif;
+    color: var(--white-color);
+}
+
+.overlay {
+    z-index: 1;
+    position: absolute;
+    top: 5.6rem;
+    min-width: 100%;
+    min-height: 101%;  
+    background-color: black;
+    opacity: 0.4; 
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.center-circle svg {
+    display: flex;
+    justify-content: center;
+}
+
+.nav-z {
+    z-index: 5;
+}
+
+.title {
+    margin-top: -8rem;
+    margin-bottom: 8rem;
+}
+
+.img-destaque {
+    width: 50%;
+    margin: 0 10rem;
+}
+
+.heading-grid {
+    outline: none;
+}
+
+.div-footer {
+    padding: 1rem;
+}

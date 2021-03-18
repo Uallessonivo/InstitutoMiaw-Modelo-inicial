@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Instituto Miaw - Início</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <link rel="stylesheet" href="./assets/css/classes.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav
+      class="nav-z navbar navbar-expand-lg navbar-dark sticky-top"
+      style="background-color: #279191"
+    >
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img
+            href="#intro"
+            src="./assets/img/miawlogo.png"
+            alt=""
+            width="120"
+            height="40"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse nav justify-content-end"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="./index.html"
+                >Início</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./pages/castracao.html"
+                >Castração popular</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./pages/ajuda.html">Como ajudar</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./pages/comofunciona.html"
+                >Como funciona</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./pages/contato.html">Contato</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div id="intro" class="overlay"></div>
+    <video autoplay muted loop id="myVideo">
+      <source src="./assets/img/catheader.mp4" type="video/mp4" />
+    </video>
+    <div class="content">
+      <h1 class="title-content center">Ajude essa causa</h1>
+      <p class="title-content">Evite maus tratos</p>
+      <button class="btn-center" id="myBtn" onclick="myFunction()">
+        Pausar
+      </button>
+    </div>
+    <h1 class="center title">Alguns dos nossos esforços</h1>
+    <div class="container marketing">
+      <div class="card-group text-center">
+        <div class="card border-white mb-3">
+          <img
+            src="./assets/img/ativo1.png"
+            class="card-img-top img-destaque"
+            alt="Gato fofo"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Controle populacional</h5>
+            <p class="card-text">
+              Juntamente com ajuda da população local, estamos tentando amenizar
+              o número de pets em situação de rua com uma corrente de doação de
+              pets.
+            </p>
+          </div>
+        </div>
+        <div class="card border-white mb-3">
+          <img
+            src="./assets/img/ativo2.png"
+            class="card-img-top img-destaque"
+            alt="Gato fofo"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Castração popular</h5>
+            <p class="card-text">
+              Através da corrente de castração popular, reduzimos o custo de uma
+              castração ao máximo possível. 
+            </p>
+          </div>
+        </div>
+        <div class="card border-white mb-3">
+          <img
+            src="./assets/img/ativo3.png"
+            class="card-img-top img-destaque"
+            alt="Gato fofo"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Tratamentos para pets de rua</h5>
+            <p class="card-text">
+              Aqui damos atendimento para pets de rua com tratamento pós
+              cirúrgico, evitando problema posteriores relacionados a falta do
+              tratamento.
+            </p>
+          </div>
+        </div>
+      </div>
+      <hr class="featurette-divider" />
+
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading">
+            Aqui vai as postagem do site.
+            <span class="text-muted">Aqui o subtitulo da postagem</span>
+          </h2>
+          <p class="lead">
+            Aqui vamos colocar um texto falando sobre essa postagem
+          </p>
+        </div>
+        <div class="col-md-5">
+          <svg
+            class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
+            width="500"
+            height="500"
+            xmlns="http://www.w3.org/2000/svg"
+            role="img"
+            aria-label="Placeholder: 500x500"
+            preserveAspectRatio="xMidYMid slice"
+            focusable="false"
+          >
+            <title>Placeholder</title>
+            <rect width="100%" height="100%" fill="#eee"></rect>
+            <text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text>
+          </svg>
+        </div>
+      </div>
+
+      <hr class="featurette-divider" />
+
+      <div class="row featurette">
+        <div class="col-md-7 order-md-2">
+          <h2 class="featurette-heading">
+            Aqui vai as postagem do site.
+            <span class="text-muted">Aqui o subtitulo da postagem</span>
+          </h2>
+          <p class="lead">
+            Aqui vamos colocar um texto falando sobre essa postagem
+          </p>
+        </div>
+        <div class="col-md-5">
+          <svg
+            class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
+            width="500"
+            height="500"
+            xmlns="http://www.w3.org/2000/svg"
+            role="img"
+            aria-label="Placeholder: 500x500"
+            preserveAspectRatio="xMidYMid slice"
+            focusable="false"
+          >
+            <title>Placeholder</title>
+            <rect width="100%" height="100%" fill="#eee"></rect>
+            <text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text>
+          </svg>
+        </div>
+      </div>
+
+      <hr class="featurette-divider" />
+
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading">
+            Aqui vai as postagem do site.
+            <span class="text-muted">Aqui o subtitulo da postagem</span>
+          </h2>
+          <p class="lead">
+            Aqui vamos colocar um texto falando sobre essa postagem
+          </p>
+        </div>
+        <div class="col-md-5">
+          <svg
+            class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
+            width="500"
+            height="500"
+            xmlns="http://www.w3.org/2000/svg"
+            role="img"
+            aria-label="Placeholder: 500x500"
+            preserveAspectRatio="xMidYMid slice"
+            focusable="false"
+          >
+            <title>Placeholder</title>
+            <rect width="100%" height="100%" fill="#eee"></rect>
+            <text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text>
+          </svg>
+        </div>
+      </div>
+
+      <hr class="featurette-divider" />
+    </div>
+    <footer class="footer mt-auto py-3" style="background-color: #279191">
+      <div class="container">
+        <div class="d-flex justify-content-between div-footer">
+          <span class="text-white">2021 INSTITUTO MIAW</span>
+        </div>
+      </div>
+    </footer>
+    <script src="./assets/js/index.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

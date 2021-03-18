@@ -1,0 +1,113 @@
+:root {
+    --primary-color: #279191;
+    --white-color: #fff;
+    --light-gray-color: #e4d3d3;
+    --gap: 3rem;
+    --secondary-color: crimson;    
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;        
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    line-height: 1.5;
+    overflow-x: hidden;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+    font-size: 6rem;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 6rem;
+    margin-bottom: 5rem;
+    text-transform: uppercase;
+    line-height: 1.2;
+}
+
+h3 {
+    font-size: 5rem;
+    text-transform: uppercase;
+}
+
+h4 {
+    font-size: 4.5rem;
+    text-transform: uppercase;
+}
+
+h5 {
+    font-size: 4rem;
+    text-transform: uppercase;
+}
+
+h6 {
+    font-size: 3.5rem;
+    text-transform: uppercase;
+}
+
+a {
+    text-decoration: none;
+    text-align: right;
+}
+
+p {
+    margin-bottom: 3rem;    
+}
+
+#myVideo {
+    position: relative;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;    
+}
+
+
+.content {
+    position: relative;
+    bottom: 50rem;
+    color: #f1f1f1;
+    width: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    z-index: 2;
+}
+  
+  /* Style the button used to pause/play the video */
+#myBtn {
+    width: 200px;
+    font-size: 18px;
+    padding: 10px;
+    border: none;
+    background: #279191;
+    color: #fff;
+    cursor: pointer;
+}
+  
+#myBtn:hover {
+    background: #fff;
+    color: black;
+}
+
+
+
