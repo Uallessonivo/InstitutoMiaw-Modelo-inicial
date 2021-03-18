@@ -45,3 +45,12 @@
 .div-footer {
     padding: 1rem;
 }
+
+.container {
+  max-width: 100%;
+}
+
+.pricing-header {
+  max-width: 700px;
+}
+
