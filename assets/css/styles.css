@@ -109,6 +109,11 @@ p {
     color: black;
 }
 
+.btn-color {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+}
+
 @media (min-width: 320px) and (max-width: 600px) {
     .content {
         position: relative;

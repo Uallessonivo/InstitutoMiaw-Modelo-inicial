@@ -118,7 +118,11 @@
         class="display-4 text-center">AGENDAMENTO PARA CASTRAÇÂO POPULAR</h1>
         <p class="text-center">A tarifa popular nos ajuda a manter essa causa em atividade e o valor é referente apenas aos custos dos materiais para que o procedimento do seu pet seja realizado. </p>
           <div class="divider"></div>
-          <form class="row g-3">
+          <form 
+          id="my-form" 
+          class="row g-3"   
+          action="https://formspree.io/f/xjvjbvoa"
+          method="POST">
             <div class="col-sm-6">
               <label for="firstName" class="form-label">Nome</label>
               <input
@@ -127,6 +131,7 @@
                 id="firstName"
                 placeholder="Primeiro nome"
                 required
+                name="nome"
               />
             </div>
             <div class="col-sm-6">
@@ -137,6 +142,7 @@
                 id="lastName"
                 placeholder="Sobrenome"
                 required
+                name="sobrenome"
               />
             </div>
             <div class="col-md-6">
@@ -146,6 +152,7 @@
                 class="form-control"
                 id="inputEmail4"
                 placeholder="E-mail válido"
+                name="email"
               />
             </div>
             <div class="col-md-6">
@@ -156,6 +163,7 @@
                 id="cpf"
                 placeholder="Digite um CPF válido"
                 required
+                name="cpf"
               />
             </div>
             <div class="col-md-6">
@@ -165,6 +173,7 @@
                 class="form-control"
                 id="inputAddress"
                 placeholder="O nome da sua rua"
+                name="endereco"
               />
             </div>
             <div class="col-sm-6">
@@ -175,15 +184,23 @@
                 id="telPhone"
                 placeholder="(99) 9 9999-9999"
                 required
+                name="telefone"
               />
             </div>
             <div class="col-md-6">
               <label for="inputCity" class="form-label">Cidade</label>
-              <input type="text" class="form-control" id="inputCity" />
+              <input 
+              type="text" 
+              class="form-control" 
+              name="cidade"
+              id="inputCity" />
             </div>
             <div class="col-md-4">
               <label for="inputState" class="form-label">Estado</label>
-              <select id="inputState" class="form-select">
+              <select 
+              name="estado"
+              id="inputState" 
+              class="form-select">
                 <option selected>Selecione seu estado</option>
                 <option value="">Selecione</option>
                 <option value="AC">Acre</option>
@@ -217,7 +234,11 @@
             </div>
             <div class="col-md-2">
               <label for="inputZip" class="form-label">CEP</label>
-              <input type="text" class="form-control" id="inputZip" />
+              <input 
+              name="cep"
+              type="text" 
+              class="form-control" 
+              id="inputZip" />
             </div>
             <form class="was-validated">
               <div class="mb-3">
@@ -225,6 +246,7 @@
                   >Mensagem</label
                 >
                 <textarea
+                  name="mensagem"
                   class="form-control"
                   id="validationTextarea"
                   placeholder="Envie uma mensagem caso queira compartilhar algo a respeito do seu pet"
@@ -236,6 +258,7 @@
               >
               <div class="mb-3">
                 <input
+                  name="agendamento"
                   class="form-control"
                   type="date"
                   value="2021-01-01"
@@ -243,19 +266,19 @@
                 />
               </div>
                   <label for="example-date-input" class="col-form-label"
-                    >Sobre seu pet</label
+                    >Qual é o seu pet?</label
                   >
                   <div class="mb-3"">
                     <select
+                      name="pet"
                       class="form-select"
                       required
                       aria-label="select example"
-                    >
-                      <option value="">Gato ou Cachorro?</option>
-                      <option value="1">GATO MACHO</option>
-                      <option value="2">GATO FÊMEA</option>
-                      <option value="3">CÃO MACHO</option>
-                      <option value="4">CÃO FÊMEA</option>
+                    >                      
+                      <option value="GATO MACHO">GATO MACHO</option>
+                      <option value="GATO FÊMEA">GATO FÊMEA</option>
+                      <option value="CÃO MACHO">CÃO MACHO</option>
+                      <option value="CÃO FÊMEA">CÃO FÊMEA</option>
                     </select>
                     <div class="invalid-feedback">
                       Por gentileza, selecione uma das opções
@@ -263,9 +286,10 @@
                   </div>
              </div>
               <div class="mb-3">
-                <button class="btn btn-primary" type="submit">
+                <button id="my-form-button" class="btn btn-color" type="submit">
                   AGENDAR
                 </button>
+                <p id="my-form-status"></p>
                 <div class="divider"></div>
               </div>
             </form>
@@ -331,7 +355,7 @@
                 ></textarea>
               </div>  
               <div class="mb-3">
-                <button class="btn btn-primary" type="submit">
+                <button class="btn btn-color" type="submit">
                   ENVIAR MENSAGEM
                 </button>
                 <div class="divider"></div>
@@ -354,6 +378,7 @@
         </div>
       </div>
     </footer>
+    <script src="../assets/js/form.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
