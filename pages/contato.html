@@ -64,11 +64,15 @@
             </li>
             <li class="nav-item">
               <a
-                class="nav-link active"
-                aria-current="page"
-                href="./contato.html"
-                >Contato</a
+                class="nav-link"                
+                href="./agendamento.html"
+                >Agendamento</a
               >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" 
+              aria-current="page"
+              href="./contato.html">Contato</a>
             </li>
           </ul>
         </div>
@@ -76,47 +80,9 @@
     </nav>
     <div class="divider"></div>
     <div class="container">
-      <ul class="nav nav-tabs" id="myTab" role="tablist">
-        <li class="nav-item" role="presentation">
-          <button
-            class="nav-link active"
-            id="home-tab"
-            data-bs-toggle="tab"
-            data-bs-target="#home"
-            type="button"
-            role="tab"
-            aria-controls="home"
-            aria-selected="true"
-          >
-            AGENDAMENTO
-          </button>
-        </li>
-        <li class="nav-item" role="presentation">
-          <button
-            class="nav-link"
-            id="contact-tab"
-            data-bs-toggle="tab"
-            data-bs-target="#contact"
-            type="button"
-            role="tab"
-            aria-controls="contact"
-            aria-selected="false"
-          >
-            CONTATO
-          </button>
-        </li>
-      </ul>
-      <div class="divider"></div>
-      <div class="tab-content" id="myTabContent">
-        <div
-          class="tab-pane fade show active"
-          id="home"
-          role="tabpanel"
-          aria-labelledby="home-tab"
-        >
-        <h1 
-        class="display-4 text-center">AGENDAMENTO PARA CASTRAÇÂO POPULAR</h1>
-        <p class="text-center">A tarifa popular nos ajuda a manter essa causa em atividade e o valor é referente apenas aos custos dos materiais para que o procedimento do seu pet seja realizado. </p>
+      <h1 
+        class="display-4 text-center">DESEJA ENTRAR EM CONTATO?</h1>
+        <p class="text-center">Envie sua mensagem e aguarde nosso retorno.</p>
           <div class="divider"></div>
           <form 
           id="my-form" 
@@ -154,28 +120,8 @@
                 placeholder="E-mail válido"
                 name="email"
               />
-            </div>
-            <div class="col-md-6">
-              <label for="cpf" class="form-label">CPF</label>
-              <input
-                type="text"
-                class="form-control"
-                id="cpf"
-                placeholder="Digite um CPF válido"
-                required
-                name="cpf"
-              />
-            </div>
-            <div class="col-md-6">
-              <label for="inputAddress" class="form-label">Endereço</label>
-              <input
-                type="text"
-                class="form-control"
-                id="inputAddress"
-                placeholder="O nome da sua rua"
-                name="endereco"
-              />
-            </div>
+            </div>         
+            
             <div class="col-sm-6">
               <label for="telPhone" class="form-label">Telefone</label>
               <input
@@ -186,60 +132,7 @@
                 required
                 name="telefone"
               />
-            </div>
-            <div class="col-md-6">
-              <label for="inputCity" class="form-label">Cidade</label>
-              <input 
-              type="text" 
-              class="form-control" 
-              name="cidade"
-              id="inputCity" />
-            </div>
-            <div class="col-md-4">
-              <label for="inputState" class="form-label">Estado</label>
-              <select 
-              name="estado"
-              id="inputState" 
-              class="form-select">
-                <option selected>Selecione seu estado</option>
-                <option value="">Selecione</option>
-                <option value="AC">Acre</option>
-                <option value="AL">Alagoas</option>
-                <option value="AP">Amapá</option>
-                <option value="AM">Amazonas</option>
-                <option value="BA">Bahia</option>
-                <option value="CE">Ceará</option>
-                <option value="DF">Distrito Federal</option>
-                <option value="ES">Espirito Santo</option>
-                <option value="GO">Goiás</option>
-                <option value="MA">Maranhão</option>
-                <option value="MS">Mato Grosso do Sul</option>
-                <option value="MT">Mato Grosso</option>
-                <option value="MG">Minas Gerais</option>
-                <option value="PA">Pará</option>
-                <option value="PB">Paraíba</option>
-                <option value="PR">Paraná</option>
-                <option value="PE">Pernambuco</option>
-                <option value="PI">Piauí</option>
-                <option value="RJ">Rio de Janeiro</option>
-                <option value="RN">Rio Grande do Norte</option>
-                <option value="RS">Rio Grande do Sul</option>
-                <option value="RO">Rondônia</option>
-                <option value="RR">Roraima</option>
-                <option value="SC">Santa Catarina</option>
-                <option value="SP">São Paulo</option>
-                <option value="SE">Sergipe</option>
-                <option value="TO">Tocantins</option>
-              </select>
-            </div>
-            <div class="col-md-2">
-              <label for="inputZip" class="form-label">CEP</label>
-              <input 
-              name="cep"
-              type="text" 
-              class="form-control" 
-              id="inputZip" />
-            </div>
+            </div>            
             <form class="was-validated">
               <div class="mb-3">
                 <label for="validationTextarea" class="form-label"
@@ -249,182 +142,29 @@
                   name="mensagem"
                   class="form-control"
                   id="validationTextarea"
-                  placeholder="Envie uma mensagem caso queira compartilhar algo a respeito do seu pet"
+                  placeholder="Envie uma mensagem"
                 ></textarea>
-              </div>
-              <div>
-              <label for="example-date-input" class="col-form-label"
-                >Escolha a data de agendamento</label
-              >
-              <div class="mb-3">
-                <input
-                  name="agendamento"
-                  class="form-control"
-                  type="date"
-                  value="2021-01-01"
-                  id="example-date-input"
-                />
-              </div>
-              <label for="example-date-input" class="col-form-label"
-                    >Turno e horário de atendimento</label
-                  >
-                  <div class="mb-3"">
-                    <select
-                      name="turno"
-                      class="form-select"
-                      required
-                      aria-label="select example"
-                    >                      
-                      <option value="MANHÃ 8:00">MANHÃ 8:00</option>
-                      <option value="MANHÃ 9:00">MANHÃ 9:00</option>
-                      <option value="MANHÃ 10:00">MANHÃ 10:00</option>
-                      <option value="MANHÃ 11:00">MANHÃ 11:00</option>
-                      <option value="TARDE 13:00">TARDE 13:00</option>
-                      <option value="TARDE 14:00">TARDE 14:00</option>
-                      <option value="TARDE 15:00">TARDE 15:00</option>
-                      <option value="TARDE 16:00">TARDE 16:00</option>
-                    </select>
-                    <div class="invalid-feedback">
-                      Por gentileza, selecione uma das opções
-                    </div>
-                  </div>
-                  <label for="example-date-input" class="col-form-label"
-                    >Qual é o seu pet?</label
-                  >
-                  <div class="mb-3"">
-                    <select
-                      name="pet"
-                      class="form-select"
-                      required
-                      aria-label="select example"
-                    >                      
-                      <option value="GATO MACHO">GATO MACHO SRD</option>
-                      <option value="GATO FÊMEA">GATO FÊMEA SRD</option>
-                      <option value="CÃO MACHO">CÃO MACHO SRD</option>
-                      <option value="CÃO FÊMEA">CÃO FÊMEA SRD</option>
-                    </select>
-                    <div class="invalid-feedback">
-                      Por gentileza, selecione uma das opções
-                    </div>
-                  </div>
-                  <label for="example-date-input" class="col-form-label"
-                    >Quantos pets?</label
-                  >
-                  <div class="mb-3"">
-                    <select
-                      name="numero de pets"
-                      class="form-select"
-                      required
-                      aria-label="select example"
-                    >                      
-                      <option value="1">1</option>
-                      <option value="2">2</option>
-                      <option value="3">3</option>
-                      <option value="4">4</option>
-                      <option value="5">5</option>
-                    </select>
-                    <div class="invalid-feedback">
-                      Por gentileza, selecione uma das opções
-                    </div>
-                  </div>
+              </div>              
              </div>
               <div class="d-grid gap-2 col-6 mx-auto">
                 <button id="my-form-button" class="btn btn-color" type="submit">
-                  AGENDAR
+                  ENVIAR MENSAGEM
                 </button>
                 <p id="my-form-status"></p>
                 <div class="divider"></div>
               </div>
             </form>
           </form>
-        </div>
-        <div
-          class="tab-pane fade"
-          id="contact"
-          role="tabpanel"
-          aria-labelledby="contact-tab"
-        >
-        <h1 
-        class="display-4 text-center">ALGUMA DÚVIDA?</h1>
-        <p class="text-center">sinta-se a vontade parar entrar em contato e sanar todas as suas dúvidas</p>
-          <div class="divider"></div>
-          <form 
-          id="my-form-contact"
-          action="https://formspree.io/f/xqkwzkln"
-          method="POST"
-          class="row g-3">
-            <div class="col-sm-6">
-              <label for="firstName" class="form-label">Nome</label>
-              <input
-                type="text"
-                class="form-control"
-                id="firstName"
-                placeholder="Primeiro nome"
-                required
-                name="nome"
-              />
-            </div>
-            <div class="col-sm-6">
-              <label for="lastName" class="form-label">Sobrenome</label>
-              <input
-                type="text"
-                class="form-control"
-                id="lastName"
-                placeholder="Sobrenome"  
-                name="sobrenome"              
-              />
-            </div>
-            <div class="col-md-6">
-              <label for="inputEmail4" class="form-label">Email</label>
-              <input
-                type="email"
-                class="form-control"
-                id="inputEmail4"
-                placeholder="E-mail válido"
-                name="email"
-              />
-            </div>
-            <div class="col-sm-6">
-              <label for="telPhone" class="form-label">Telefone</label>
-              <input
-                type="text"
-                class="form-control"
-                id="telPhone"
-                placeholder="(99) 9 9999-9999"   
-                name="telefone"             
-              />
-            </div>
-            <form class="was-validated">
-              <div class="mb-3">
-                <label for="validationTextarea" class="form-label"
-                  >Mensagem</label
-                >
-                <textarea
-                  name="mensagem"
-                  class="form-control"
-                  id="validationTextarea"
-                  placeholder="Envie uma mensagem caso queira tirar alguma dúvida ou sugerir alguma melhoria"
-                ></textarea>
-              </div>  
-              <div class="d-grid gap-2 col-6 mx-auto">
-                <button 
-                id="my-form-button"
-                class="btn btn-color" 
-                type="submit">
-                  ENVIAR MENSAGEM
-                </button>
-                <p id="my-form-status-contact"></p>
-                <div class="divider"></div>
-                <div class="divider"></div>
-                <div class="divider"></div>
-                <div class="divider"></div>
-              </div>
-            </form>
-          </form>
-        </div>
-      </div>
     </div>
 
+    <div class="divider"></div>
+    <div class="container">
+      <h1 
+        class="display-4 text-center">COMO CHEGAR?</h1>
+      <div id="map-container-google-1" class="z-depth-1-half map-container" style="height: 500px">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1944.8227199199196!2d-38.30290209944656!3d-12.866162144388433!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7163e3d8ce361dd%3A0x3a371ce0ec1453ed!2sR.%20Queira%20Deus%2C%20227%20-%20Port%C3%A3o%2C%20Lauro%20de%20Freitas%20-%20BA%2C%2042700-000!5e0!3m2!1spt-BR!2sbr!4v1616331837184!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+    </div>
     <div class="divider"></div>
 
     <footer class="footer mt-auto py-3" style="background-color: #279191">
@@ -434,7 +174,7 @@
         </div>
       </div>
     </footer>
-    <script src="../assets/js/contato.js"></script>
+    <script src="../assets/js/agendamento.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"

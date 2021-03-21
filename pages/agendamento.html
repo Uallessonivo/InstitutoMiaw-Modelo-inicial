@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Instituto Miaw - Agendamento</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="../assets/css/styles.css" />
+    <link rel="stylesheet" href="../assets/css/classes.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav
+      class="nav-z navbar navbar-expand-lg navbar-dark sticky-top"
+      style="background-color: #279191"
+    >
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img
+            href="#intro"
+            src="../assets/img/miawlogo.png"
+            alt=""
+            width="120"
+            height="40"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse nav justify-content-end"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html">Início</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./castracao.html">Castração popular</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./ajuda.html">Como ajudar</a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="./agendamento.html"
+                >Agendamento</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./contato.html">Contato</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="divider"></div>
+    <div class="container">
+      <h1 
+        class="display-4 text-center">AGENDAMENTO PARA CASTRAÇÂO POPULAR</h1>
+        <p class="text-center">A tarifa popular nos ajuda a manter essa causa em atividade e o valor é referente apenas aos custos dos materiais para que o procedimento do seu pet seja realizado. </p>
+          <div class="divider"></div>
+          <form 
+          id="my-form" 
+          class="row g-3"   
+          action="https://formspree.io/f/xjvjbvoa"
+          method="POST">
+            <div class="col-sm-6">
+              <label for="firstName" class="form-label">Nome</label>
+              <input
+                type="text"
+                class="form-control"
+                id="firstName"
+                placeholder="Primeiro nome"
+                required
+                name="nome"
+              />
+            </div>
+            <div class="col-sm-6">
+              <label for="lastName" class="form-label">Sobrenome</label>
+              <input
+                type="text"
+                class="form-control"
+                id="lastName"
+                placeholder="Sobrenome"
+                required
+                name="sobrenome"
+              />
+            </div>
+            <div class="col-md-6">
+              <label for="inputEmail4" class="form-label">Email</label>
+              <input
+                type="email"
+                class="form-control"
+                id="inputEmail4"
+                placeholder="E-mail válido"
+                name="email"
+              />
+            </div>
+            <div class="col-md-6">
+              <label for="cpf" class="form-label">CPF</label>
+              <input
+                type="text"
+                class="form-control"
+                id="cpf"
+                placeholder="Digite um CPF válido"
+                required
+                name="cpf"
+              />
+            </div>
+            <div class="col-md-6">
+              <label for="inputAddress" class="form-label">Endereço</label>
+              <input
+                type="text"
+                class="form-control"
+                id="inputAddress"
+                placeholder="O nome da sua rua"
+                name="endereco"
+              />
+            </div>
+            <div class="col-sm-6">
+              <label for="telPhone" class="form-label">Telefone</label>
+              <input
+                type="text"
+                class="form-control"
+                id="telPhone"
+                placeholder="(99) 9 9999-9999"
+                required
+                name="telefone"
+              />
+            </div>
+            <div class="col-md-6">
+              <label for="inputCity" class="form-label">Cidade</label>
+              <input 
+              type="text" 
+              class="form-control" 
+              name="cidade"
+              id="inputCity" />
+            </div>
+            <div class="col-md-4">
+              <label for="inputState" class="form-label">Estado</label>
+              <select 
+              name="estado"
+              id="inputState" 
+              class="form-select">
+                <option selected>Selecione seu estado</option>
+                <option value="">Selecione</option>
+                <option value="AC">Acre</option>
+                <option value="AL">Alagoas</option>
+                <option value="AP">Amapá</option>
+                <option value="AM">Amazonas</option>
+                <option value="BA">Bahia</option>
+                <option value="CE">Ceará</option>
+                <option value="DF">Distrito Federal</option>
+                <option value="ES">Espirito Santo</option>
+                <option value="GO">Goiás</option>
+                <option value="MA">Maranhão</option>
+                <option value="MS">Mato Grosso do Sul</option>
+                <option value="MT">Mato Grosso</option>
+                <option value="MG">Minas Gerais</option>
+                <option value="PA">Pará</option>
+                <option value="PB">Paraíba</option>
+                <option value="PR">Paraná</option>
+                <option value="PE">Pernambuco</option>
+                <option value="PI">Piauí</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="RN">Rio Grande do Norte</option>
+                <option value="RS">Rio Grande do Sul</option>
+                <option value="RO">Rondônia</option>
+                <option value="RR">Roraima</option>
+                <option value="SC">Santa Catarina</option>
+                <option value="SP">São Paulo</option>
+                <option value="SE">Sergipe</option>
+                <option value="TO">Tocantins</option>
+              </select>
+            </div>
+            <div class="col-md-2">
+              <label for="inputZip" class="form-label">CEP</label>
+              <input 
+              name="cep"
+              type="text" 
+              class="form-control" 
+              id="inputZip" />
+            </div>
+            <form class="was-validated">
+              <div class="mb-3">
+                <label for="validationTextarea" class="form-label"
+                  >Mensagem</label
+                >
+                <textarea
+                  name="mensagem"
+                  class="form-control"
+                  id="validationTextarea"
+                  placeholder="Envie uma mensagem caso queira compartilhar algo a respeito do seu pet"
+                ></textarea>
+              </div>
+              <div>
+              <label for="example-date-input" class="col-form-label"
+                >Escolha a data de agendamento</label
+              >
+              <div class="mb-3">
+                <input
+                  name="agendamento"
+                  class="form-control"
+                  type="date"
+                  value="2021-03-20"
+                  id="example-date-input"
+                />
+              </div>
+              <label for="example-date-input" class="col-form-label"
+                    >Turno e horário de atendimento</label
+                  >
+                  <div class="mb-3"">
+                    <select
+                      name="turno"
+                      class="form-select"
+                      required
+                      aria-label="select example"
+                    >             
+                      <option selected>Selecione o horário</option>         
+                      <option value="MANHÃ 8:00">MANHÃ 8:00</option>
+                      <option value="MANHÃ 9:00">MANHÃ 9:00</option>
+                      <option value="MANHÃ 10:00">MANHÃ 10:00</option>
+                      <option value="MANHÃ 11:00">MANHÃ 11:00</option>
+                      <option value="TARDE 13:00">TARDE 13:00</option>
+                      <option value="TARDE 14:00">TARDE 14:00</option>
+                      <option value="TARDE 15:00">TARDE 15:00</option>
+                      <option value="TARDE 16:00">TARDE 16:00</option>
+                    </select>
+                    <div class="invalid-feedback">
+                      Por gentileza, selecione uma das opções
+                    </div>
+                  </div>
+                  <label for="example-date-input" class="col-form-label"
+                    >Qual é o seu pet?</label
+                  >
+                  <div class="mb-3"">
+                    <select
+                      name="pet"
+                      class="form-select"
+                      required
+                      aria-label="select example"
+                    >                  
+                      <option selected>Selecione seu pet</option>    
+                      <option value="GATO MACHO">GATO MACHO SRD</option>
+                      <option value="GATO FÊMEA">GATO FÊMEA SRD</option>
+                      <option value="CÃO MACHO">CÃO MACHO SRD</option>
+                      <option value="CÃO FÊMEA">CÃO FÊMEA SRD</option>
+                    </select>
+                    <div class="invalid-feedback">
+                      Por gentileza, selecione uma das opções
+                    </div>
+                  </div>
+                  <label for="example-date-input" class="col-form-label"
+                    >Quantos pets?</label
+                  >
+                  <div class="mb-3"">
+                    <select
+                      name="numero de pets"
+                      class="form-select"
+                      required
+                      aria-label="select example"
+                    >                   
+                      <option selected>Selecione quantos pets</option>   
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                    </select>
+                    <div class="invalid-feedback">
+                      Por gentileza, selecione uma das opções
+                    </div>
+                  </div>
+             </div>
+              <div class="d-grid gap-2 col-6 mx-auto">
+                <button id="my-form-button" class="btn btn-color" type="submit">
+                  AGENDAR
+                </button>
+                <p id="my-form-status"></p>
+                <div class="divider"></div>
+              </div>
+            </form>
+          </form>
+    </div>
+
+    <div class="divider"></div>
+
+    <footer class="footer mt-auto py-3" style="background-color: #279191">
+      <div class="container">
+        <div class="d-flex justify-content-between div-footer">
+          <span class="text-white">2021 INSTITUTO MIAW</span>
+        </div>
+      </div>
+    </footer>
+    <script src="../assets/js/agendamento.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
