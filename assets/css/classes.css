@@ -125,7 +125,7 @@ header .overlay {
   
 @media (pointer: coarse) and (hover: none) {
     header {
-      background: url('https://images.pexels.com/photos/3777622/pexels-photo-3777622.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940') black no-repeat center center scroll;
+      background: url('https://images.pexels.com/photos/57416/cat-sweet-kitty-animals-57416.jpeg?cs=srgb&dl=pexels-pixabay-57416.jpg&fm=jpg') black no-repeat center center scroll;
     }
     header video {
       display: none;
