@@ -265,6 +265,29 @@
                   id="example-date-input"
                 />
               </div>
+              <label for="example-date-input" class="col-form-label"
+                    >Turno e horário de atendimento</label
+                  >
+                  <div class="mb-3"">
+                    <select
+                      name="turno"
+                      class="form-select"
+                      required
+                      aria-label="select example"
+                    >                      
+                      <option value="MANHÃ 8:00">MANHÃ 8:00</option>
+                      <option value="MANHÃ 9:00">MANHÃ 9:00</option>
+                      <option value="MANHÃ 10:00">MANHÃ 10:00</option>
+                      <option value="MANHÃ 11:00">MANHÃ 11:00</option>
+                      <option value="TARDE 13:00">TARDE 13:00</option>
+                      <option value="TARDE 14:00">TARDE 14:00</option>
+                      <option value="TARDE 15:00">TARDE 15:00</option>
+                      <option value="TARDE 16:00">TARDE 16:00</option>
+                    </select>
+                    <div class="invalid-feedback">
+                      Por gentileza, selecione uma das opções
+                    </div>
+                  </div>
                   <label for="example-date-input" class="col-form-label"
                     >Qual é o seu pet?</label
                   >
@@ -275,17 +298,37 @@
                       required
                       aria-label="select example"
                     >                      
-                      <option value="GATO MACHO">GATO MACHO</option>
-                      <option value="GATO FÊMEA">GATO FÊMEA</option>
-                      <option value="CÃO MACHO">CÃO MACHO</option>
-                      <option value="CÃO FÊMEA">CÃO FÊMEA</option>
+                      <option value="GATO MACHO">GATO MACHO SRD</option>
+                      <option value="GATO FÊMEA">GATO FÊMEA SRD</option>
+                      <option value="CÃO MACHO">CÃO MACHO SRD</option>
+                      <option value="CÃO FÊMEA">CÃO FÊMEA SRD</option>
+                    </select>
+                    <div class="invalid-feedback">
+                      Por gentileza, selecione uma das opções
+                    </div>
+                  </div>
+                  <label for="example-date-input" class="col-form-label"
+                    >Quantos pets?</label
+                  >
+                  <div class="mb-3"">
+                    <select
+                      name="numero de pets"
+                      class="form-select"
+                      required
+                      aria-label="select example"
+                    >                      
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
                     </select>
                     <div class="invalid-feedback">
                       Por gentileza, selecione uma das opções
                     </div>
                   </div>
              </div>
-              <div class="mb-3">
+              <div class="d-grid gap-2 col-6 mx-auto">
                 <button id="my-form-button" class="btn btn-color" type="submit">
                   AGENDAR
                 </button>
@@ -305,7 +348,11 @@
         class="display-4 text-center">ALGUMA DÚVIDA?</h1>
         <p class="text-center">sinta-se a vontade parar entrar em contato e sanar todas as suas dúvidas</p>
           <div class="divider"></div>
-          <form class="row g-3">
+          <form 
+          id="my-form-contact"
+          action="https://formspree.io/f/xqkwzkln"
+          method="POST"
+          class="row g-3">
             <div class="col-sm-6">
               <label for="firstName" class="form-label">Nome</label>
               <input
@@ -314,6 +361,7 @@
                 id="firstName"
                 placeholder="Primeiro nome"
                 required
+                name="nome"
               />
             </div>
             <div class="col-sm-6">
@@ -322,7 +370,8 @@
                 type="text"
                 class="form-control"
                 id="lastName"
-                placeholder="Sobrenome"                
+                placeholder="Sobrenome"  
+                name="sobrenome"              
               />
             </div>
             <div class="col-md-6">
@@ -332,6 +381,7 @@
                 class="form-control"
                 id="inputEmail4"
                 placeholder="E-mail válido"
+                name="email"
               />
             </div>
             <div class="col-sm-6">
@@ -340,7 +390,8 @@
                 type="text"
                 class="form-control"
                 id="telPhone"
-                placeholder="(99) 9 9999-9999"                
+                placeholder="(99) 9 9999-9999"   
+                name="telefone"             
               />
             </div>
             <form class="was-validated">
@@ -349,15 +400,20 @@
                   >Mensagem</label
                 >
                 <textarea
+                  name="mensagem"
                   class="form-control"
                   id="validationTextarea"
                   placeholder="Envie uma mensagem caso queira tirar alguma dúvida ou sugerir alguma melhoria"
                 ></textarea>
               </div>  
-              <div class="mb-3">
-                <button class="btn btn-color" type="submit">
+              <div class="d-grid gap-2 col-6 mx-auto">
+                <button 
+                id="my-form-button"
+                class="btn btn-color" 
+                type="submit">
                   ENVIAR MENSAGEM
                 </button>
+                <p id="my-form-status-contact"></p>
                 <div class="divider"></div>
                 <div class="divider"></div>
                 <div class="divider"></div>
@@ -378,7 +434,7 @@
         </div>
       </div>
     </footer>
-    <script src="../assets/js/form.js"></script>
+    <script src="../assets/js/contato.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
