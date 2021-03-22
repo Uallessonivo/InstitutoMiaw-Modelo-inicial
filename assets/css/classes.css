@@ -122,12 +122,25 @@ header .overlay {
     position:absolute;
 }
 
-  
-@media (pointer: coarse) and (hover: none) {
-    header {
-      background: url('https://images.pexels.com/photos/3777622/pexels-photo-3777622.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940') black no-repeat center center scroll;
-    }
+
+@media (min-aspect-ratio: 16/9) {
     header video {
-      display: none;
+        width:100%;
+        height: auto;
+    }
+}
+@media (max-aspect-ratio: 16/9) {
+    header video { 
+        width:auto;
+        height: 100%;
+    }
+}
+@media (max-width: 767px) {
+    header video {
+        display: none;
+    }
+    header {
+        background: url('../img/catheader.jpeg.png');
+        background-size: cover;
     }
 }
