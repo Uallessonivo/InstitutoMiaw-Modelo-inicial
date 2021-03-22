@@ -3,6 +3,10 @@
     color: var(--white-color);
 }
 
+.lead {
+    font-size: 1.5rem;
+}
+
 .overlay {
     z-index: 1;
     position: absolute;
