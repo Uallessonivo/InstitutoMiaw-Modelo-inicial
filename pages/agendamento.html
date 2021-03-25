@@ -18,6 +18,10 @@
       href="https://fonts.googleapis.com/css2?family=Anton&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
   </head>
   <body>
     <nav
@@ -227,16 +231,9 @@
                 >Escolha a data de agendamento</label
               >
               <div class="input-group date" data-provide="datepicker">
-                <input                  
-                  name="agendamento"
-                  class="form-control"
-                  type="date"
-                  value="2021-03-20"                  
-                  min='2021-03-22' 
-                  max='2021-03-26'
-                  id="example-date-input"
-                />
+                <input class="form-control" type="text" name="agendamento" value="dd-mm-yyyy" />
               </div>
+
               <label for="example-date-input" class="col-form-label"
                     >Turno e horário de atendimento</label
                   >
