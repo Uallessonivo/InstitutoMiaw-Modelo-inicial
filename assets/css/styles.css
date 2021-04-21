@@ -135,6 +135,17 @@ p {
   color: black;
 }
 
+.pix {
+  font-size: 2rem;
+  color: var(--primary-color);
+  border: none;
+  background: none;
+}
+
+.pix:hover {
+  color: #104040;
+}
+
 @media (min-width: 320px) and (max-width: 600px) {
     .content {
         position: relative;
