@@ -3,13 +3,13 @@
     --white-color: #fff;
     --light-gray-color: #e4d3d3;
     --gap: 3rem;
-    --secondary-color: crimson;    
+    --secondary-color: crimson;
 }
 
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;        
+    box-sizing: border-box;
 }
 
 html {
@@ -68,7 +68,7 @@ a {
 }
 
 p {
-    margin-bottom: 3rem; 
+    margin-bottom: 3rem;
 }
 
 #myVideo {
@@ -76,7 +76,7 @@ p {
     right: 0;
     bottom: 0;
     min-width: 100%;
-    min-height: 100%;    
+    min-height: 100%;
 }
 
 
@@ -92,7 +92,7 @@ p {
     flex-flow: column;
     z-index: 2;
 }
-  
+
   /* Style the button used to pause/play the video */
 #myBtn {
     width: 200px;
@@ -112,6 +112,27 @@ p {
 .btn-color {
     background-color: var(--primary-color);
     color: var(--white-color);
+}
+
+.pricing {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+}
+
+.table-pricing {
+  margin: auto;
+  width: 50%;
+  border: 1px solid var(--primary-color);
+  padding: 10px;
+}
+
+.pricing-small {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
 }
 
 @media (min-width: 320px) and (max-width: 600px) {
@@ -138,7 +159,7 @@ p {
     #myBtn {
         display: none;
     }
-    
+
 
     html {
         overflow-x: hidden;
@@ -152,7 +173,7 @@ p {
     }
 
     #myVideo {
-        width: 50%; 
+        width: 50%;
     }
 
     h1 {
@@ -160,34 +181,34 @@ p {
         text-align: center;
         align-items: center;
       }
-    
+
       h2 {
-        font-size: 3.6rem;        
+        font-size: 3.6rem;
         text-align: center;
         align-items: center;
       }
-    
+
       h3 {
         font-size: 3.4rem;
       }
-    
+
       h4 {
         font-size: 3.2rem;
       }
-    
+
       h5 {
         font-size: 2rem;
       }
-    
+
       h6 {
         font-size: 2.8rem;
       }
 
-      p{          
+      p{
         text-align: center;
         align-items: center;
       }
-      
+
 }
 
 @media (min-width: 601px) and (max-width: 768px) {
@@ -214,7 +235,7 @@ p {
     #myBtn {
         display: none;
     }
-    
+
 
     html {
         overflow-x: hidden;
@@ -228,7 +249,7 @@ p {
     }
 
     #myVideo {
-        width: 50%; 
+        width: 50%;
     }
 
     h1 {
@@ -236,34 +257,32 @@ p {
         text-align: center;
         align-items: center;
       }
-    
+
       h2 {
-        font-size: 3.6rem;        
+        font-size: 3.6rem;
         text-align: center;
         align-items: center;
       }
-    
+
       h3 {
         font-size: 3.4rem;
       }
-    
+
       h4 {
         font-size: 3.2rem;
       }
-    
+
       h5 {
         font-size: 2rem;
       }
-    
+
       h6 {
         font-size: 2.8rem;
       }
 
-      p{          
+      p{
         text-align: center;
         align-items: center;
       }
-      
+
 }
-
-
