@@ -16,7 +16,7 @@ async function handleSubmit(event) {
       form.reset();
     })
     .catch((error) => {
-      status.innerHTML = "Oops! Captamos algum erro durante a solicitação!";
+      status.innerHTML = "Oops! Erro durante a solicitação!";
     });
 }
 form.addEventListener("submit", handleSubmit);
