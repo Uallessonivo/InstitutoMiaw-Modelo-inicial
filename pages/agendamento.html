@@ -214,18 +214,7 @@
               class="form-control" 
               id="inputZip" />
             </div>
-            <form class="was-validated">
-              <div class="mb-3">
-                <label for="validationTextarea" class="form-label"
-                  >Mensagem</label
-                >
-                <textarea
-                  name="mensagem"
-                  class="form-control"
-                  id="validationTextarea"
-                  placeholder="Envie uma mensagem caso queira compartilhar algo a respeito do seu pet"
-                ></textarea>
-              </div>
+            <form class="was-validated">             
               <div>
               <label for="example-date-input" id="datefield" class="col-form-label"
                 >Escolha a data de agendamento</label
@@ -245,14 +234,13 @@
                       aria-label="select example"
                     >             
                       <option selected>Selecione o horário</option>         
-                      <option value="MANHÃ 8:00">MANHÃ 8:00</option>
-                      <option value="MANHÃ 9:00">MANHÃ 9:00</option>
-                      <option value="MANHÃ 10:00">MANHÃ 10:00</option>
-                      <option value="MANHÃ 11:00">MANHÃ 11:00</option>
-                      <option value="TARDE 13:00">TARDE 13:00</option>
-                      <option value="TARDE 14:00">TARDE 14:00</option>
-                      <option value="TARDE 15:00">TARDE 15:00</option>
-                      <option value="TARDE 16:00">TARDE 16:00</option>
+                      <option value="MANHÃ 7:30">MANHÃ 7:30</option>
+                      <option value="MANHÃ 8:30">MANHÃ 8:30</option>
+                      <option value="MANHÃ 09:30">MANHÃ 09:30</option>
+                      <option value="MANHÃ 10:30">MANHÃ 10:30</option>
+                      <option value="TARDE 11:30">TARDE 11:30</option>
+                      <option value="TARDE 12:30">TARDE 12:30</option>
+                      <option value="TARDE 13:30">TARDE 13:30</option>
                     </select>
                     <div class="invalid-feedback">
                       Por gentileza, selecione uma das opções
@@ -294,11 +282,88 @@
                       <option value="3">3</option>
                       <option value="4">4</option>
                       <option value="5">5</option>
+                      <option value="Entre 6 a 10">Entre 6 e 10</option>
+                      <option value="Entre 10 e 15">Entre 10 e 15</option>
+                      <option value="Entre 15 e 20">Entre 15 e 20</option>
+                      <option value="Mais de 20">Mais de 20</option>
                     </select>
                     <div class="invalid-feedback">
                       Por gentileza, selecione uma das opções
                     </div>
                   </div>
+
+                  <div class="mb-3">
+                    <label for="validationTextarea" class="form-label"
+                      >Teve doença recente?, Qual?</label
+                    >
+                    <textarea
+                      name="Doencas recente"
+                      class="form-control"
+                      id="validationTextarea"
+                      placeholder="Descreva se seu pet teve alguma doença recente e qual foi a doença"
+                    ></textarea>
+                  </div>
+
+                  <div class="mb-3">
+                    <label for="validationTextarea" class="form-label"
+                      >Vacinou com veterinário?</label
+                    >
+                    <textarea
+                      name="Vacinou com Veterinário"
+                      class="form-control"
+                      id="validationTextarea"
+                      placeholder="SIM ou NÃO"
+                    ></textarea>
+                  </div>
+
+                  <div class="mb-3">
+                    <label for="validationTextarea" class="form-label"
+                      >Vacinou com a prefeitura? Quando?</label
+                    >
+                    <textarea
+                      name="Vacinou com prefeitura"
+                      class="form-control"
+                      id="validationTextarea"
+                      placeholder="SIM ou NÃO / QUANDO"
+                    ></textarea>
+                  </div>
+
+                  <div class="mb-3">
+                    <label for="validationTextarea" class="form-label"
+                      >Fez medicamento para verme  em menos de 3 meses?</label
+                    >
+                    <textarea
+                      name="Fez medicamento de verme em 3 meses"
+                      class="form-control"
+                      id="validationTextarea"
+                      placeholder="SIM ou NÃO"
+                    ></textarea>
+                  </div>
+
+                  <div class="mb-3">
+                    <label for="validationTextarea" class="form-label"
+                      >Fezes, urina e apetite normal?</label
+                    >
+                    <textarea
+                      name="Detalhes"
+                      class="form-control"
+                      id="validationTextarea"
+                      placeholder="SIM ou NÃO / SE NÃO, DESCREVA EM DETALHES"
+                    ></textarea>
+                  </div>
+
+                  <div class="mb-3">
+                    <label for="validationTextarea" class="form-label"
+                      >Só come ração?</label
+                    >
+                    <textarea
+                      name="So come racao"
+                      class="form-control"
+                      id="validationTextarea"
+                      placeholder="SIM ou NÃO"
+                    ></textarea>
+                  </div>
+
              </div>
               <div class="d-grid gap-2 col-6 mx-auto">
                 <button id="my-form-button" class="btn btn-color" type="submit">
@@ -342,7 +407,7 @@
             </svg></a>
         </section>
       </div>
-      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      <div class="text-center p-3">
         © 2021 Copyright:
         <a class="text-white" href="https://institutomiaw.com.br/">Instituto Miaw</a>
       </div>
