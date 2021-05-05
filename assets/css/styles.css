@@ -1,118 +1,125 @@
 :root {
-    --primary-color: #279191;
-    --white-color: #fff;
-    --light-gray-color: #e4d3d3;
-    --gap: 3rem;
-    --secondary-color: crimson;
+  --primary-color: #279191;
+  --white-color: #fff;
+  --light-gray-color: #e4d3d3;
+  --gap: 3rem;
+  --secondary-color: crimson;
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 html {
-    font-size: 62.5%;
-    scroll-behavior: smooth;
+  font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 body {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1.5rem;
-    color: var(--primary-color);
-    line-height: 1.5;
-    overflow-x: hidden;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5rem;
+  color: var(--primary-color);
+  line-height: 1.5;
+  overflow-x: hidden;
 }
 
-
-h1, h2, h3, h4, h5, h6 {
-    font-family: 'Montserrat', sans-serif;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat", sans-serif;
 }
 
 h1 {
-    font-size: 6rem;
-    text-transform: uppercase;
+  font-size: 6rem;
+  text-transform: uppercase;
 }
 
 h2 {
-    font-size: 6rem;
-    margin-bottom: 5rem;
-    text-transform: uppercase;
-    line-height: 1.2;
+  font-size: 6rem;
+  margin-bottom: 5rem;
+  text-transform: uppercase;
+  line-height: 1.2;
 }
 
 h3 {
-    font-size: 5rem;
-    text-transform: uppercase;
+  font-size: 5rem;
+  text-transform: uppercase;
 }
 
 h4 {
-    font-size: 4.5rem;
-    text-transform: uppercase;
+  font-size: 4.5rem;
+  text-transform: uppercase;
 }
 
 h5 {
-    font-size: 4rem;
-    text-transform: uppercase;
+  font-size: 4rem;
+  text-transform: uppercase;
 }
 
 h6 {
-    font-size: 3.5rem;
-    text-transform: uppercase;
+  font-size: 3.5rem;
+  text-transform: uppercase;
 }
 
 a {
-    text-decoration: none;
-    text-align: right;
+  text-decoration: none;
+  text-align: right;
+  color: white;
+}
+
+a:hover {
+  color: black;
 }
 
 p {
-    margin-bottom: 3rem;
+  margin-bottom: 3rem;
 }
-
 
 #myVideo {
-    position: relative;
-    right: 0;
-    bottom: 0;
-    min-width: 100%;
-    min-height: 100%;
+  position: relative;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
 }
-
 
 .content {
-    position: relative;
-    bottom: 50rem;
-    color: #f1f1f1;
-    width: 100%;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: column;
-    z-index: 2;
+  position: relative;
+  bottom: 50rem;
+  color: #f1f1f1;
+  width: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+  z-index: 2;
 }
 
-  /* Style the button used to pause/play the video */
+/* Style the button used to pause/play the video */
 #myBtn {
-    width: 200px;
-    font-size: 18px;
-    padding: 10px;
-    border: none;
-    background: #279191;
-    color: #fff;
-    cursor: pointer;
+  width: 200px;
+  font-size: 18px;
+  padding: 10px;
+  border: none;
+  background: #279191;
+  color: #fff;
+  cursor: pointer;
 }
 
 #myBtn:hover {
-    background: #fff;
-    color: black;
+  background: #fff;
+  color: black;
 }
 
 .btn-color {
-    background-color: var(--primary-color);
-    color: var(--white-color);
+  background-color: var(--primary-color);
+  color: var(--white-color);
 }
 
 .pricing {
@@ -148,153 +155,151 @@ p {
 }
 
 @media (min-width: 320px) and (max-width: 600px) {
-    .content {
-        position: relative;
-        bottom: 25rem;
-        width: 12;
-        margin: 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-flow: column;
-        z-index: 2;
-    }
+  .content {
+    position: relative;
+    bottom: 25rem;
+    width: 12;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    z-index: 2;
+  }
 
-    .content h1, .content p {
-        color: #279191;
-    }
+  .content h1,
+  .content p {
+    color: #279191;
+  }
 
-    .overlay {
-        display: none;
-    }
+  .overlay {
+    display: none;
+  }
 
-    #myBtn {
-        display: none;
-    }
+  #myBtn {
+    display: none;
+  }
 
+  html {
+    overflow-x: hidden;
+  }
 
-    html {
-        overflow-x: hidden;
-    }
+  .padding-center {
+    margin: 1rem;
+    padding: 1rem;
+    align-items: center;
+    justify-content: center;
+  }
 
-    .padding-center {
-        margin: 1rem;
-        padding: 1rem;
-        align-items: center;
-        justify-content: center;
-    }
+  #myVideo {
+    width: 50%;
+  }
 
-    #myVideo {
-        width: 50%;
-    }
+  h1 {
+    font-size: 3rem;
+    text-align: center;
+    align-items: center;
+  }
 
-    h1 {
-        font-size: 3rem;
-        text-align: center;
-        align-items: center;
-      }
+  h2 {
+    font-size: 3.6rem;
+    text-align: center;
+    align-items: center;
+  }
 
-      h2 {
-        font-size: 3.6rem;
-        text-align: center;
-        align-items: center;
-      }
+  h3 {
+    font-size: 3.4rem;
+  }
 
-      h3 {
-        font-size: 3.4rem;
-      }
+  h4 {
+    font-size: 3.2rem;
+  }
 
-      h4 {
-        font-size: 3.2rem;
-      }
+  h5 {
+    font-size: 2rem;
+  }
 
-      h5 {
-        font-size: 2rem;
-      }
+  h6 {
+    font-size: 2.8rem;
+  }
 
-      h6 {
-        font-size: 2.8rem;
-      }
-
-      p{
-        text-align: center;
-        align-items: center;
-      }
-
+  p {
+    text-align: center;
+    align-items: center;
+  }
 }
 
 @media (min-width: 601px) and (max-width: 768px) {
-    .content {
-        position: relative;
-        bottom: 25rem;
-        width: 12;
-        margin: 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-flow: column;
-        z-index: 2;
-    }
+  .content {
+    position: relative;
+    bottom: 25rem;
+    width: 12;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    z-index: 2;
+  }
 
-    .content h1, .content p {
-        color: #279191;
-    }
+  .content h1,
+  .content p {
+    color: #279191;
+  }
 
-    .overlay {
-        display: none;
-    }
+  .overlay {
+    display: none;
+  }
 
-    #myBtn {
-        display: none;
-    }
+  #myBtn {
+    display: none;
+  }
 
+  html {
+    overflow-x: hidden;
+  }
 
-    html {
-        overflow-x: hidden;
-    }
+  .padding-center {
+    margin: 1rem;
+    padding: 1rem;
+    align-items: center;
+    justify-content: center;
+  }
 
-    .padding-center {
-        margin: 1rem;
-        padding: 1rem;
-        align-items: center;
-        justify-content: center;
-    }
+  #myVideo {
+    width: 50%;
+  }
 
-    #myVideo {
-        width: 50%;
-    }
+  h1 {
+    font-size: 3rem;
+    text-align: center;
+    align-items: center;
+  }
 
-    h1 {
-        font-size: 3rem;
-        text-align: center;
-        align-items: center;
-      }
+  h2 {
+    font-size: 3.6rem;
+    text-align: center;
+    align-items: center;
+  }
 
-      h2 {
-        font-size: 3.6rem;
-        text-align: center;
-        align-items: center;
-      }
+  h3 {
+    font-size: 3.4rem;
+  }
 
-      h3 {
-        font-size: 3.4rem;
-      }
+  h4 {
+    font-size: 3.2rem;
+  }
 
-      h4 {
-        font-size: 3.2rem;
-      }
+  h5 {
+    font-size: 2rem;
+  }
 
-      h5 {
-        font-size: 2rem;
-      }
+  h6 {
+    font-size: 2.8rem;
+  }
 
-      h6 {
-        font-size: 2.8rem;
-      }
-
-      p{
-        text-align: center;
-        align-items: center;
-      }
-
+  p {
+    text-align: center;
+    align-items: center;
+  }
 }
