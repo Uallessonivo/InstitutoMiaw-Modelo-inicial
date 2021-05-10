@@ -13,10 +13,12 @@ async function handleSubmit(event) {
   })
     .then((response) => {
       status.innerHTML = "Enviado! Aguarde nosso retorno!";
+      alert('Cadastro Solicitado')
       form.reset();
     })
     .catch((error) => {
       status.innerHTML = "Oops! Erro durante a solicitação!";
+      alert('Erro durante a solicitação, confira os campos!')
     });
 }
 form.addEventListener("submit", handleSubmit);
