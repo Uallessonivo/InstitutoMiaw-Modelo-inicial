@@ -135,8 +135,7 @@ header .overlay {
 }
 @media (max-aspect-ratio: 16/9) {
     header video { 
-        width:auto;
-        height: 100%;
+        width:100%;
     }
 }
 @media (max-width: 767px) {
