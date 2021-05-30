@@ -1,0 +1,52 @@
+$('input[name="agendamento"]').daterangepicker(
+    {
+      singleDatePicker: true,
+      minYear: 2021,
+      autoApply: true,
+      locale: {
+        format: "DD/MM/YYYY",
+        separator: " - ",
+        applyLabel: "Apply",
+        cancelLabel: "Cancel",
+        fromLabel: "From",
+        toLabel: "To",
+        customRangeLabel: "Custom",
+        weekLabel: "W",
+        daysOfWeek: ["D", "S", "T", "Q", "Q", "S", "S"],
+        monthNames: [
+          "Janeiro",
+          "Fevereiro",
+          "Março",
+          "Abril",
+          "Maio",
+          "junho",
+          "julho",
+          "Agosto",
+          "Setembro",
+          "Outubro",
+          "Novembro",
+          "Dezembro",
+        ],
+        firstDay: 1,
+      },
+      linkedCalendars: false,
+      showCustomRangeLabel: false,
+      startDate: "19/03/2021", // Não alterar
+      endDate: "25/03/2021", // Não alterar
+      //////////////////////////////////////////
+      minDate: "09/06/2021", // Inicio da campanha
+      maxDate: "13/06/2021", // Fim da campanha
+      drops: "auto",
+    },
+    function (start, end, label) {
+      console.log(
+        "New date range selected: " +
+          start.format("YYYY-MM-DD") +
+          " to " +
+          end.format("YYYY-MM-DD") +
+          " (predefined range: " +
+          label +
+          ")"
+      );
+    }
+  );

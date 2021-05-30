@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Instituto Miaw - Agendamento</title>
+    <title>Instituto Miaw - Cadastro</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -23,6 +23,23 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
     />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css"
+    />
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"
+    ></script>
   </head>
   <body>
     <nav
@@ -63,7 +80,7 @@
                 class="nav-link active"
                 aria-current="page"
                 href="./cadastrar.html"
-                >Cadastro e agendamento</a
+                >Cadastro</a
               >
             </li>
             <li class="nav-item">
@@ -74,52 +91,276 @@
       </div>
     </nav>
     <div class="divider"></div>
-    <section class="text-center">
-      <div class="row py-lg-5">
-        <div class="col-lg-6 col-md-8 mx-auto">
-          <h5 class="fw-light">CADASTRO E AGENDAMENTO</h5>
-          <p>Para pets que atende aos requisitos básicos</p>
+    <div class="container">
+      <h1 class="display-4 text-center">CADASTRO PARA CASTRAÇÃO POPULAR</h1>
+      <p class="text-center">
+        A tarifa popular nos ajuda a manter essa causa em atividade e o valor é
+        referente apenas aos custos dos materiais para que o procedimento do seu
+        pet seja realizado.
+      </p>
+      <div class="divider"></div>
+      <form
+        id="my-form"
+        class="row g-3"
+        action="https://formspree.io/f/xjvjbvoa"
+        method="POST"
+      >
+        <div class="col-sm-6">
+          <label for="firstName" class="form-label">Nome</label>
+          <input
+            type="text"
+            class="form-control"
+            id="firstName"
+            placeholder="Primeiro nome"
+            required
+            name="nome"
+          />
         </div>
-      </div>
-      <script src="//widget.simplybook.me/v2/widget/widget.js"></script>
-      <script>
-        var widget = new SimplybookWidget({
-          widget_type: "iframe",
-          url: "https:\/\/miaw.simplybook.me",
-          theme: "air",
-          theme_settings: {
-            timeline_modern_display: "as_table",
-            timeline_hide_unavailable: "1",
-            timeline_show_end_time: "0",
-            sb_base_color: "#279191",
-            display_item_mode: "block",
-            booking_nav_bg_color: "#d1e9c6",
-            body_bg_color: "#f2f2f2",
-            sb_review_image: "",
-            dark_font_color: "#279191",
-            light_font_color: "#ffffff",
-            btn_color_1: "#279191",
-            sb_company_label_color: "#ffffff",
-            hide_img_mode: "0",
-            show_sidebar: "0",
-            sb_busy: "#b3b3b3",
-            sb_available: "#279191",
-          },
-          timeline: "modern",
-          datepicker: "top_calendar",
-          is_rtl: false,
-          app_config: { allow_switch_to_ada: 0, predefined: [] },
-        });
-      </script>
-      <div class="col-lg-6 col-md-8 mx-auto">
-        <h6 class="fw-light">QUER SABER COMO FUNCIONA?</h6>
-        <p>
-          <a href="./castracao.html" class="btn btn-color my-2"
-            >ENTENDA A CASTRAÇÃO POPULAR</a
-          >
-        </p>
-      </div>
-    </section>
+        <div class="col-sm-6">
+          <label for="lastName" class="form-label">Sobrenome</label>
+          <input
+            type="text"
+            class="form-control"
+            id="lastName"
+            placeholder="Sobrenome"
+            required
+            name="sobrenome"
+          />
+        </div>
+        <div class="col-md-6">
+          <label for="inputEmail4" class="form-label">Email</label>
+          <input
+            type="email"
+            class="form-control"
+            id="inputEmail4"
+            placeholder="E-mail válido"
+            name="email"
+          />
+        </div>
+        <div class="col-md-6">
+          <label for="cpf" class="form-label">CPF</label>
+          <input
+            type="text"
+            class="form-control"
+            id="cpf"
+            placeholder="Digite um CPF válido"
+            required
+            name="cpf"
+          />
+        </div>
+        <div class="col-md-6">
+          <label for="inputAddress" class="form-label">Endereço</label>
+          <input
+            type="text"
+            class="form-control"
+            id="inputAddress"
+            placeholder="O nome da sua rua"
+            name="endereco"
+          />
+        </div>
+        <div class="col-sm-6">
+          <label for="telPhone" class="form-label">Telefone</label>
+          <input
+            type="text"
+            class="form-control"
+            id="telPhone"
+            placeholder="(99) 9 9999-9999"
+            required
+            name="telefone"
+          />
+        </div>
+        <div class="col-md-6">
+          <label for="inputCity" class="form-label">Cidade</label>
+          <input
+            type="text"
+            class="form-control"
+            name="cidade"
+            id="inputCity"
+          />
+        </div>
+        <div class="col-md-4">
+          <label for="inputState" class="form-label">Estado</label>
+          <select name="estado" id="inputState" class="form-select">
+            <option selected>Selecione seu estado</option>
+            <option value="">Selecione</option>
+            <option value="AC">Acre</option>
+            <option value="AL">Alagoas</option>
+            <option value="AP">Amapá</option>
+            <option value="AM">Amazonas</option>
+            <option value="BA">Bahia</option>
+            <option value="CE">Ceará</option>
+            <option value="DF">Distrito Federal</option>
+            <option value="ES">Espírito Santo</option>
+            <option value="GO">Goiás</option>
+            <option value="MA">Maranhão</option>
+            <option value="MS">Mato Grosso do Sul</option>
+            <option value="MT">Mato Grosso</option>
+            <option value="MG">Minas Gerais</option>
+            <option value="PA">Pará</option>
+            <option value="PB">Paraíba</option>
+            <option value="PR">Paraná</option>
+            <option value="PE">Pernambuco</option>
+            <option value="PI">Piauí</option>
+            <option value="RJ">Rio de Janeiro</option>
+            <option value="RN">Rio Grande do Norte</option>
+            <option value="RS">Rio Grande do Sul</option>
+            <option value="RO">Rondônia</option>
+            <option value="RR">Roraima</option>
+            <option value="SC">Santa Catarina</option>
+            <option value="SP">São Paulo</option>
+            <option value="SE">Sergipe</option>
+            <option value="TO">Tocantins</option>
+          </select>
+        </div>
+        <div class="col-md-2">
+          <label for="inputZip" class="form-label">CEP</label>
+          <input name="cep" type="text" class="form-control" id="inputZip" />
+        </div>
+        <form class="was-validated">
+          <div>
+            <label
+              for="example-date-input"
+              id="datefield"
+              class="col-form-label"
+              >Escolha a data de agendamento</label
+            >
+            <div class="input-group date" data-provide="datepicker">
+              <input
+                class="form-control"
+                type="text"
+                name="agendamento"
+                value="dd-mm-yyyy"
+              />
+            </div>
+
+            <label for="example-date-input" class="col-form-label"
+              >Qual é o seu pet?</label
+            >
+            <div class="mb-3">
+              <select
+                name="pet"
+                class="form-select"
+                required
+                aria-label="select example"
+              >
+                <option selected>Selecione seu pet</option>
+                <option value="GATO MACHO">GATO MACHO SRD</option>
+                <option value="GATO FÊMEA">GATO FÊMEA SRD</option>
+                <option value="CÃO MACHO">CÃO MACHO SRD</option>
+                <option value="CÃO FÊMEA">CÃO FÊMEA SRD</option>
+              </select>
+              <div class="invalid-feedback">
+                Por gentileza, selecione uma das opções
+              </div>
+            </div>
+            <label for="example-date-input" class="col-form-label"
+              >Quantos pets?</label
+            >
+            <div class="mb-3">
+              <select
+                name="numero de pets"
+                class="form-select"
+                required
+                aria-label="select example"
+              >
+                <option selected>Selecione quantos pets</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="Entre 6 a 10">Entre 6 e 10</option>
+                <option value="Entre 10 e 15">Entre 10 e 15</option>
+                <option value="Entre 15 e 20">Entre 15 e 20</option>
+                <option value="Mais de 20">Mais de 20</option>
+              </select>
+              <div class="invalid-feedback">
+                Por gentileza, selecione uma das opções
+              </div>
+            </div>
+
+            <div class="mb-3">
+              <label for="validationTextarea" class="form-label"
+                >Teve doença recente?, Qual?</label
+              >
+              <textarea
+                name="Doenças recente"
+                class="form-control"
+                id="validationTextarea"
+                placeholder="Descreva se seu pet teve alguma doença recente e qual foi a doença"
+              ></textarea>
+            </div>
+
+            <div class="mb-3">
+              <label for="validationTextarea" class="form-label"
+                >Vacinou com veterinário?</label
+              >
+              <textarea
+                name="Vacinou com Veterinário"
+                class="form-control"
+                id="validationTextarea"
+                placeholder="SIM ou NÃO"
+              ></textarea>
+            </div>
+
+            <div class="mb-3">
+              <label for="validationTextarea" class="form-label"
+                >Vacinou com a prefeitura? Quando?</label
+              >
+              <textarea
+                name="Vacinou com prefeitura"
+                class="form-control"
+                id="validationTextarea"
+                placeholder="SIM ou NÃO / QUANDO"
+              ></textarea>
+            </div>
+
+            <div class="mb-3">
+              <label for="validationTextarea" class="form-label"
+                >Fez medicamento para verme em menos de 3 meses?</label
+              >
+              <textarea
+                name="Fez medicamento de verme em 3 meses"
+                class="form-control"
+                id="validationTextarea"
+                placeholder="SIM ou NÃO"
+              ></textarea>
+            </div>
+
+            <div class="mb-3">
+              <label for="validationTextarea" class="form-label"
+                >Fezes, urina e apetite normal?</label
+              >
+              <textarea
+                name="Detalhes"
+                class="form-control"
+                id="validationTextarea"
+                placeholder="SIM ou NÃO / SE NÃO, DESCREVA EM DETALHES"
+              ></textarea>
+            </div>
+
+            <div class="mb-3">
+              <label for="validationTextarea" class="form-label"
+                >Só come ração?</label
+              >
+              <textarea
+                name="Só come ração"
+                class="form-control"
+                id="validationTextarea"
+                placeholder="SIM ou NÃO"
+              ></textarea>
+            </div>
+          </div>
+          <div class="d-grid gap-2 col-6 mx-auto">
+            <button id="my-form-button" class="btn btn-color" type="submit">
+              SOLICITAR CADASTRO
+            </button>
+            <p id="my-form-status"></p>
+            <div class="divider"></div>
+          </div>
+        </form>
+      </form>
+    </div>
 
     <footer class="site-footer">
       <div class="container">
@@ -143,7 +384,7 @@
               <li><a href="../index.html" aria-current="page">Início</a></li>
               <li><a href="./castracao.html">Castração popular</a></li>
               <li><a href="./ajuda.html">Como ajudar</a></li>
-              <li><a href="./cadastrar.html">Cadastro e agendamento</a></li>
+              <li><a href="./cadastrar.html">Cadastro</a></li>
               <li><a href="./contato.html">Contato</a></li>
             </ul>
           </div>
@@ -197,5 +438,7 @@
         </div>
       </div>
     </footer>
+    <script src="../assets/js/agendamento.js"></script>
+    <script src="../assets/js/date.js"></script>
   </body>
 </html>
