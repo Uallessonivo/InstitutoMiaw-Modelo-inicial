@@ -22,3 +22,18 @@ async function handleSubmit(event) {
     });
 }
 form.addEventListener("submit", handleSubmit);
+
+
+function myFunction() {
+  var x = document.getElementById("myDIV");
+  var form = document.querySelector(".myFORM");
+  form.classList.add('myFORM2')
+
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+
+  
+}

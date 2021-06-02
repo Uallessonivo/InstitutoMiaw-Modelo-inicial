@@ -154,6 +154,14 @@ p {
   color: #104040;
 }
 
+.myFORM {
+  display: none;
+}
+
+.myFORM2 {
+  display: block;
+}
+
 @media (min-width: 320px) and (max-width: 600px) {
   .content {
     position: relative;
