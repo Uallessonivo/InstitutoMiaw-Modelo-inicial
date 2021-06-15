@@ -138,12 +138,17 @@ header .overlay {
         width:100%;
     }
 }
+
+
 @media (max-width: 767px) {
     header video {
         display: none;
     }
     header {
         background: url('../img/catheader.jpeg.png');
-        background-size: cover;
+        background-size: 100% 100%;
+        width: 100%;
+        background-repeat: no-repeat;
+        height: 500px;
     }
 }
