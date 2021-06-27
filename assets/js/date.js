@@ -31,11 +31,11 @@ $('input[name="agendamento"]').daterangepicker(
       },
       linkedCalendars: false,
       showCustomRangeLabel: false,
-      startDate: "19/03/2021", // Não alterar
-      endDate: "25/03/2021", // Não alterar
+      startDate: "06/07/2021", // Não alterar
+      endDate: "10/07/2021", // Não alterar
       //////////////////////////////////////////
-      minDate: "09/06/2021", // Inicio da campanha
-      maxDate: "13/06/2021", // Fim da campanha
+      minDate: "06/07/2021", // Inicio da campanha
+      maxDate: "10/07/2021", // Fim da campanha
       drops: "auto",
     },
     function (start, end, label) {
